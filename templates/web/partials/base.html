@@ -1,0 +1,92 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="robots" content="" />    
+    <meta name="description" content="" />
+    
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="{% static 'web/images/favicon.ico' %}" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'web/images/favicon.png' %}" />
+    
+    <!-- PAGE TITLE HERE -->
+    <title>Jobzilla Template | Home Page Style 1</title>
+    
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'web/css/bootstrap.min.css' %}"><!-- BOOTSTRAP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'web/css/font-awesome.min.css' %}"><!-- FONTAWESOME STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'web/css/feather.css' %}"><!-- FEATHER ICON SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'web/css/owl.carousel.min.css' %}"><!-- OWL CAROUSEL STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'web/css/magnific-popup.min.css' %}"><!-- MAGNIFIC POPUP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'web/css/lc_lightbox.css' %}"><!-- Lc light box popup -->     
+    <link rel="stylesheet" type="text/css" href="{% static 'web/css/bootstrap-select.min.css' %}"><!-- BOOTSTRAP SLECT BOX STYLE SHEET  -->
+    <link rel="stylesheet" type="text/css" href="{% static 'web/css/dataTables.bootstrap5.min.css' %}"><!-- DATA table STYLE SHEET  -->
+    <link rel="stylesheet" type="text/css" href="{% static 'web/css/select.bootstrap5.min.css' %}"><!-- DASHBOARD select bootstrap  STYLE SHEET  -->     
+    <link rel="stylesheet" type="text/css" href="{% static 'web/css/dropzone.css' %}"><!-- DROPZONE STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'web/css/scrollbar.css' %}"><!-- CUSTOM SCROLL BAR STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'web/css/datepicker.css' %}"><!-- DATEPICKER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'web/css/flaticon.css' %}"> <!-- Flaticon -->
+    <link rel="stylesheet" type="text/css" href="{% static 'web/css/swiper-bundle.min.css' %}"><!-- Swiper Slider -->
+    <link rel="stylesheet" type="text/css" href="{% static 'web/css/style.css' %}"><!-- MAIN STYLE SHEET -->   
+
+</head>
+
+
+
+<body>
+ <!-- LOADING AREA START ===== -->
+ {% comment %} <div class="loading-area">
+  <div class="loading-box"></div>
+  <div class="loading-pic">
+      <div class="wrapper">
+          <div class="cssload-loader"></div>
+      </div>
+  </div>
+</div> {% endcomment %}
+<!-- LOADING AREA  END ====== -->
+
+{% include 'web/partials/header.html' %}
+
+{% block content %}{% endblock content %}
+
+
+{% include 'web/partials/footer.html' %}
+
+
+  <!-- JAVASCRIPT  FILES ========================================= --> 
+<script  src="{% static 'web/js/jquery-3.6.0.min.js' %}"></script><!-- JQUERY.MIN JS -->
+<script  src="{% static 'web/js/popper.min.js' %}"></script><!-- POPPER.MIN JS -->
+<script  src="{% static 'web/js/bootstrap.min.js' %}"></script><!-- BOOTSTRAP.MIN JS -->
+<script  src="{% static 'web/js/magnific-popup.min.js' %}"></script><!-- MAGNIFIC-POPUP JS -->
+<script  src="{% static 'web/js/waypoints.min.js' %}"></script><!-- WAYPOINTS JS -->
+<script  src="{% static 'web/js/counterup.min.js' %}"></script><!-- COUNTERUP JS -->
+<script  src="{% static 'web/js/waypoints-sticky.min.js' %}"></script><!-- STICKY HEADER -->
+<script  src="{% static 'web/js/isotope.pkgd.min.js' %}"></script><!-- MASONRY  -->
+<script  src="{% static 'web/js/imagesloaded.pkgd.min.js' %}"></script><!-- MASONRY  -->
+<script  src="{% static 'web/js/owl.carousel.min.js' %}"></script><!-- OWL  SLIDER  -->
+<script  src="{% static 'web/js/theia-sticky-sidebar.js' %}"></script><!-- STICKY SIDEBAR  -->
+<script  src="{% static 'web/js/lc_lightbox.lite.js' %}" ></script><!-- IMAGE POPUP -->
+<script  src="{% static 'web/js/bootstrap-select.min.js' %}"></script><!-- Form js -->
+<script  src="{% static 'web/js/dropzone.js' %}"></script><!-- IMAGE UPLOAD  -->
+<script  src="{% static 'web/js/jquery.scrollbar.js' %}"></script><!-- scroller -->
+<script  src="{% static 'web/js/bootstrap-datepicker.js' %}"></script><!-- scroller -->
+<script  src="{% static 'web/js/jquery.dataTables.min.js' %}"></script><!-- Datatable -->
+<script  src="{% static 'web/js/dataTables.bootstrap5.min.js' %}"></script><!-- Datatable -->
+<script  src="{% static 'web/js/chart.js' %}"></script><!-- Chart -->
+<script  src="{% static 'web/js/bootstrap-slider.min' %}"></script><!-- Price range slider -->
+<script  src="{% static 'web/js/swiper-bundle.min' %}"></script><!-- Swiper JS -->
+<script  src="{% static 'web/js/custom.js' %}"></script><!-- CUSTOM FUCTIONS  -->
+
+</body>
+
+</html>

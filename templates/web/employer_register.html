@@ -1,0 +1,146 @@
+{% extends 'web/partials/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Login Section Start -->
+<div class="section-full site-bg-white">
+                
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-8 col-lg-6 col-md-5 twm-log-reg-media-wrap">
+                <div class="twm-log-reg-media">
+                    <div class="twm-l-media">
+                        <img src="{% static 'web/login/images/login-bg.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-7">
+                <div class="twm-log-reg-form-wrap">
+                    <div class="twm-log-reg-logo-head">
+                        {% comment %} <a href="index-2.html">
+                            <img src="{% static 'web/login/images/logo-dark.png' %}" alt="" class="logo">
+                        </a>  {% endcomment %}
+                    </div>
+
+                    <div class="twm-log-reg-inner">
+                        <div class="twm-log-reg-head">
+                            <div class="twm-log-reg-logo">
+                                <span class="log-reg-form-title">Sign Up</span>
+                            </div>
+                        </div>
+                        <div class="twm-tabs-style-2">
+                            
+                            <ul class="nav nav-tabs" id="myTab2" role="tablist">
+
+                                <!--Login Candidate-->  
+                                <li class="nav-item">
+                                  <a href="{% url 'web:employer_register' %}"> <button class="nav-link active" data-bs-toggle="#" data-bs-target="#" type="button"><i class="fas fa-building"></i>Employer</button></a> 
+                                </li>
+                                {% comment %} <h1>twm-login-candidate tab</h1> {% endcomment %}
+                                <!--Login Employer-->
+                                 <li class="nav-item">
+                                 <a href="{% url 'web:candidate_register' %}">   <button class="nav-link" data-bs-toggle="tab" data-bs-target="#twm-login-Employer" type="button"><i class="fas fa-user-tie"></i>Candidate</button></a>
+                                </li> 
+                            
+                            </ul>
+                            
+                            <div class="tab-content" id="myTab2Content">
+                                <!--Login Candidate Content-->  
+                                <div class="tab-pane fade show active" id="twm-login-candidate">
+                                    <form action="" method='POST'>
+                                        {% csrf_token %}
+                                    <div class="row">
+
+                                        <div class="col-lg-12">
+                                            <div class="form-group mb-3">
+                                                <input name="username" type="text" required="" class="form-control" placeholder="Usearname*">
+                                            </div>
+                                        </div>
+
+                                        {% comment %} <div class="col-lg-12">
+                                            <div class="form-group mb-3">
+                                                <input name="companyname" type="text" required="" class="form-control" placeholder="Comany Name*">
+                                            </div>
+                                        </div> {% endcomment %}
+                                        
+                                        <div class="col-lg-12">
+                                            <div class="form-group mb-3">
+                                                <input name="email" type="email" class="form-control" required="" placeholder="Email*">
+                                            </div>
+                                        </div>
+
+                                        {% comment %} <div class="col-lg-12">
+                                            <div class="form-group mb-3">
+                                                <input name="number" type="number" class="form-control" required="" placeholder="Number*">
+                                            </div>
+                                        </div> {% endcomment %}
+
+
+                                        <div class="col-lg-12">
+                                            <div class="form-group mb-3">
+                                                <input name="pass1" type="password" class="form-control" required="" placeholder="Password*">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-12">
+                                            <div class="form-group mb-3">
+                                                <input name="pass2" type="password" class="form-control" required="" placeholder="Confirm Password*">
+                                            </div>
+                                        </div>
+                                        
+                                        
+
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input class="site-button" type="submit" value='Sign Up'>
+                                                {% comment %} <button type="submit" class="site-button">Sign Up</button> {% endcomment %}
+                                            </div>
+                                        </div>
+                                        </form>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <span class="center-text-or">Or</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <button type="submit" class="log_with_facebook">
+                                                    <i class="fab fa-facebook"></i>
+                                                    Continue with Facebook
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <button type="submit" class="log_with_google">
+                                                    <img src="{% static 'web/login/images/google-icon.png' %}" alt="">
+                                                    Continue with Google
+                                                </button>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                </div>
+                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>   
+<!-- Login Section End -->
+
+
+
+</div>
+<!-- CONTENT END -->
+
+
+
+{% endblock content %}
